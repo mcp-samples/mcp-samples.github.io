@@ -1,58 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta wtf="wtf1233">
     <meta charset="utf-8">
     <title>MCP Application Architecture Center</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  {%- seo -%}
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    {%- seo -%}
+    <link href="/assets/css/carousel.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
   {%- feed_meta -%}
   </head>
 
   <body>
-    <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+
+    <header>
       <div class="container">
-        <a href="/" class="navbar-brand"><img height="100" width="100" src="/assets/images/icon-MCP-outlined.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#"><img height="100" width="100" src="/assets/images/icon-MCP-outlined.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Products <span class="caret"></span></a>
-              <div class="dropdown-menu" aria-labelledby="products">
-                <a class="dropdown-item" href="../default/">Default</a>
-                <a class="dropdown-item" href="../cerulean/">Cerulean</a>
-                <a class="dropdown-item" href="../cosmo/">Cosmo</a>
-              </div>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="https://www.mirantis.com">Mirantis <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../help/">Help</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="http://blog.bootswatch.com">Blog</a>
+              <a class="nav-link" href="https://docs.mirantis.com">Documentation</a>
             </li>
           </ul>
         </div>
+      </nav>
       </div>
-    </div>
-    </br>
-    </br>
-    <div class="container">
-	<div class="page-header" id="banner">
-        	<div class="row">
-          		<div class="col-lg-8 col-md-7 col-sm-6">
-            			<h1>Pulse</h1>
-            			<p class="lead">A trace of purple</p>
-          		</div>
+    </header>
+
+    <main role="main">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+		<div class="row">
+              		<div class="carousel-caption text-center">
+                		<h1>MCP Application Architecture Center</h1>
+              		</div>
 		</div>
-	</div>	
-	{{ content }}
-    </div>
-</body>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+      <div class="row">
+	<div class="col">
+		<h4>MCP Quick Starts</h4>
+	</div>
+	<div class="col">
+		<h4>MCP Solutions</h4>
+	</div>
+	<div class="col">
+		<h4>MCP Well-Architected</h4>
+	</div>
+	<div class="col">
+		<h4>MCP Cloud Security</h4>
+	</div>
+      </div>
+      </div>
+
+
+</br>
+</br>
+</br>
+      <div class="container marketing">
+        <div class="row">
+		<h1>Theme of the Month - Microservices</h1>	
+		<p>Microservices are an architectural and organizational approach to software development designed to speed up deployment cycles, foster innovation and ownership, and improve maintainability and scalability of software applications.
+
+This approach includes scaling organizations that deliver software and services. Using a microservices approach, software is composed of small independent services that communicate over well-defined APIs. These services are owned by small self-contained teams.
+
+Below, we present additional resources to help you learn more about Microservices.</p>
+</br>
+		<h1>Latest Reference Architectures</h1>
+</br>
+<p>Links to reference architectures.</p>
+</br>
+<h1>MCP Quick Start Reference Deployments </h1>
+
+<p>MCP Quick Start reference deployments help you rapidly deploy fully functional software on the MCP Cloud, following MCP best practices for security and availability. An MCP Heat template automates the deployment, and a deployment guide describes the architecture and implementation in detail. Quick Starts are modular and customizable; you can layer additional functionality on top or modify them for your own implementations. Use Quick Starts to deploy the following solutions on MCP.</p>
+
+</div>
+<div class="row">
+<div class="col">
+<h4>DevOps</h4>
+<ul>
+<li>Ansible Tower</li>
+<li>Chef Automate</li>
+<li>Confluence Datacenter</li>
+<li>Docker Enterprise Edition</li>
+<li>Git Webhooks</li>
+<li>Git Enterprise</li>
+<li>Hashicorp Consul</li>
+<li>Hashicorp Nomad</li>
+<li>Hashicorp Vault</li>
+<li>Heptio Kubernetes</li>
+<li>Cloud Foundry</li>
+<li>Puppet</li>
+<li>Spinnaker</li>
+</ul>
+</div>
+<div class="col">
+<h4>Big data & analytics</h4>
+<ul>
+<li>Cloudera EDH</li>
+<li>Cloudera Platform</li>
+<li>Informatica Big Data Management</li>
+<li>Splunk Enterprise</li>
+<li>Tableau Server</li>
+</ul>
+</div>
+		
+	</div>
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+    </main>
+
+
+
+  </body>
 </html>
